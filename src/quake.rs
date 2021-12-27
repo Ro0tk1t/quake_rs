@@ -521,6 +521,8 @@ pub mod quake {
             data.insert("ignore_cache".to_string(), Value::Bool(false));
             data.insert("start_time".to_string(), Value::String(s.start_time));
             data.insert("end_time".to_string(), Value::String(s.end_time));
+            let sc: Vec<Value> = vec![Value::String("610ce2fbda6d29df72ac56eb".to_string())];
+            data.insert("shortcuts".to_string(), Value::Array(sc));
             if !s.ip_list.is_empty(){
                 data.insert("query".to_string(), Value::String("is_latest:true".to_string()));
                 data.insert("ip_list".to_string(), Value::Array(s.ip_list));
