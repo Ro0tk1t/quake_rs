@@ -524,6 +524,7 @@ pub mod quake {
             let sc: Vec<Value> = vec![
                 Value::String("610ce2adb1a2e3e1632e67b1".to_string()),
                 Value::String("610ce2fbda6d29df72ac56eb".to_string()),
+                Value::String("612f5a5ad6b3bdb87961727f".to_string()),
             ];
             data.insert("shortcuts".to_string(), Value::Array(sc));
             if !s.ip_list.is_empty(){
